@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> </> Yasser Beyer</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script type = "text/javascript"
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+        <script  src="js/index.js"></script>
+        <link type="text/css" rel="stylesheet" href="styles/style.css">
+        <link type="text/css" rel="stylesheet" href="styles/particles.css">
+    </head>
+
+
+    <body>
+
+        <div class="name">
+            <h3 class="noselect">Yasser Beyer</h3>
+        </div>
+
+        <div class="nav-bar">
+            <div id="bars-btn">&#9776;</div>
+            <nav id="nav">
+                <div class="nav-btn" id="home-btn" onclick="moveTo('home')">home</div>
+                <div class="nav-btn" id="about-btn" onclick="moveTo('about')">about</div>
+                <div class="nav-btn" id="skills-btn" onclick="moveTo('skills')">skills</div>
+                <div class="nav-btn" id="contact-btn" onclick="moveTo('contact')">contact</div>
+                <div id="x-btn">&times;</div>
+            </nav>
+        </div>
+
+        <div id="pages">
+            <div class="container" id="home">
+                <div id="particles-js"></div>
+                <div id="copy">
+                    Hello, I'm <span>Yasser Beyer</span>.<br>
+                    I'm a front-end developer.
+                    <div id="arrow" onclick="moveTo('about')">&#8897;</div>
+                </div>
+            </div>
+
+            <div class="container" id="about">
+                <div class="top-bar" id="top-about"></div>
+                <div id="copy">
+                    <h2>ABOUT ME</h2>
+                    <h4>I’m a self-taught Front-end Developer with over nine years experience. I design and build responsive web pages and client-side web apps. I’ve always loved the idea and the process of creating something from the ground up. I try to keep up with new and upcoming front-end technology ideas and innovations. As part of my daily activities, I review Twitter feeds, watch Youtube videos and read blog posts, investigating and learning anything that sparks my interest in the web dev world.</h4>
+                </div>
+            </div>
+
+            <div class="container" id="skills">
+                <div class="top-bar" id="top-skills"></div>
+                <div id="copy">
+                    <h2>skills</h2>
+                    <ul>
+                        <li><span>JavaScript</span><img src="images/js-logo.png" alt=""></li>
+                        <li><span>HTML</span><img src="images/HTML-logo.png" alt=""></li>
+                        <li><span>CSS</span><img src="images/css-logo.png" alt=""></li>
+                        <li><span>React</span><img src="images/react-logo.png" alt=""></li>
+                        <li><span>Node</span><img src="images/node-logo.png" alt=""></li>
+                        <li><span>NPM</span><img src="images/NPM-logo.png" alt="" style="height: 50px;"></li>
+                        <li><span>Git</span><img src="images/git-logo.png" alt="" style="height:60px;"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container" id="contact">
+                <div id="copy">
+                    <h2>Contact</h2>
+                    <div id="content">
+                        <div id="email">
+                            <img id="arrow-img" src="images/paper-plane-icon.png" style="height:70px; margin-bottom:18px;">
+                            <a id="email-btn" href="mailto:yas2pt0@gmail.com"  target="_top">Send me an email</a>
+                        </div>
+                        <ul>
+                            <li><a href="https://github.com/yas46"><img src="images/GitHub-Mark-64px.png" alt="" height="50px"></a></li>
+                            <li><a href="https://www.linkedin.com/in/yasser-beyer/"><img src="images/Linkedin-icon.png" alt="" height="48px"></a></li>
+                            <li><a href="https://twitter.com/YasBeyer?lang=en"><img src="images/twitter-icon.png" alt="" height="48px"></a></li>
+                            <li><a href="https://www.instagram.com/yas46/"><img src="images/instagram-icon.png" alt="" height="55px"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script  src="js/particles.js"></script>
+
+</html>
