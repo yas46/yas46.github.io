@@ -406,7 +406,16 @@ body {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-/* Styles */
+    #home #copy {
+        font-size: 56px;
+    }
+}
+
+#home #copy span {
+    font-weight: 500;
+    color: #04c536;
+    /*text-transform: uppercase;*/
+}
 }
 
 /* Smartphones (landscape) ----------- */
