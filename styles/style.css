@@ -407,7 +407,7 @@ body {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
     #home #copy {
-        font-size: 56px;
+        font-size: 156px;
     }
 }
 
