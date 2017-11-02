@@ -403,22 +403,27 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .name h3 {
+        font-size: 1.5em;
+        letter-spacing: .3em;
+    }
     #home #copy {
-        font-size: 2em;
+        font-size: 1.9em;
         top: 30%;
     }
     #about #copy h2{
+        font-size: 4em;
         top:12%;
     }
     #about #copy h4{
-        font-size: 1.2em;
+        font-size: 1.1em;
         top:34%;
-        left: 30%;
-        transform: translateX(-30%);
-        -webkit-transform: translateX(-30%);
-        -moz-transform:translateX(-30%); /* Firefox */
-        -ms-transform:translateX(-30%); /* IE 9 */
-        -o-transform:translateX(-30%); /* Opera */
+        left: 35%;
+        transform: translateX(-35%);
+        -webkit-transform: translateX(-35%);
+        -moz-transform:translateX(-35%); /* Firefox */
+        -ms-transform:translateX(-35%); /* IE 9 */
+        -o-transform:translateX(-35%); /* Opera */
     }
     #skills #copy h2 {
         top: 12%;
@@ -433,7 +438,7 @@ body {
     }
     #contact #copy h2 {
         top: 14%;
-        font-size: 4em;
+        font-size: 3.6em;
         letter-spacing: .1em;
     }
     #contact #copy #content {
