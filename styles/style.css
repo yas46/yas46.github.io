@@ -404,15 +404,18 @@ body {
 
 @media screen and (max-width: 480px) {
     .name h3 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         letter-spacing: .3em;
     }
     #home #copy {
         font-size: 1.9em;
-        top: 30%;
+        top: 20%;
+    }
+    #home #copy #arrow {
+        font-size: 1em;
     }
     #about #copy h2{
-        font-size: 4em;
+        font-size: 3.8em;
         top:12%;
     }
     #about #copy h4{
@@ -438,7 +441,7 @@ body {
     }
     #contact #copy h2 {
         top: 14%;
-        font-size: 3.6em;
+        font-size: 3.4em;
         letter-spacing: .1em;
     }
     #contact #copy #content {
