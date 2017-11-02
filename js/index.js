@@ -86,7 +86,7 @@ $( window ).scroll(function() {
     //    $('#top-bar-about').addClass("fixed");
     }
 
-    if($(window).scrollTop() > (2*docHeight)-70) {
+    if($(window).scrollTop() > (2*docHeight)) {
        $('#top-about').removeClass("fixed");
     }
 
