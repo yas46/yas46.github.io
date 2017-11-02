@@ -421,12 +421,12 @@ body {
     #about #copy h4{
         font-size: 1.1em;
         top:34%;
-        left: 35%;
-        transform: translateX(-35%);
-        -webkit-transform: translateX(-35%);
-        -moz-transform:translateX(-35%); /* Firefox */
-        -ms-transform:translateX(-35%); /* IE 9 */
-        -o-transform:translateX(-35%); /* Opera */
+        left: 30%;
+        transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        -moz-transform:translateX(-20%); /* Firefox */
+        -ms-transform:translateX(-20%); /* IE 9 */
+        -o-transform:translateX(-20%); /* Opera */
     }
     #skills #copy h2 {
         top: 12%;
