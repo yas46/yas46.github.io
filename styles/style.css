@@ -402,19 +402,59 @@ body {
                         supported by Chrome and Opera */
 }
 
-@media screen and (max-width: 480px) {
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 420px) {
+    .name h3 {
+        font-size: 30px;
+        letter-spacing: .2em;
+    }
     #home #copy {
+        font-size: 2em;
         top: 30%;
-        font-size: 36px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%)
+    }
+    #about #copy h2{
+        top:12%;
+    }
+    #about #copy h4{
+        font-size: 1.2em;
+        top:34%;
+        left: 30%;
+        transform: translateX(-30%);
+        -webkit-transform: translateX(-30%);
+        -moz-transform:translateX(-30%); /* Firefox */
+        -ms-transform:translateX(-30%); /* IE 9 */
+        -o-transform:translateX(-30%); /* Opera */
+    }
+    #skills #copy h2 {
+        top: 12%;
+        font-size: 5em;
+        letter-spacing: .1em;
+    }
+    #skills #copy ul {
+        top: 26%;
+    }
+    #skills #copy ul li {
+        margin: 18px;
+    }
+    #contact #copy h2 {
+        top: 14%;
+        font-size: 4em;
+        letter-spacing: .1em;
+    }
+    #contact #copy #content {
+        top: 30%;
+    }
+    #contact #copy ul li a{
+        margin: 32px 28px;
+    }
+    .container {
+        overflow: auto;
     }
 }
 
-@media screen and (max-height: 480px) {
-    #home #copy {
-        top: 16%;
-        font-size: 38px;
+@media only screen and (max-width : 770px) {
+    .container {
+        overflow: auto;
     }
 }
