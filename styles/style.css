@@ -105,12 +105,9 @@ body {
 .container {
     position: relative;
     width:100vw;
-    height: 100vh;
+    min-height: 100vh;
     top: 0;
-}
-
-#home {
-
+    overflow: auto;
 }
 
 #home #copy {
@@ -206,10 +203,6 @@ body {
 
 #skills {
     background-color: #2e3242;
-}
-
-#top-bar-skills {
-    background-color: #2e3242
 }
 
 #skills #copy h2 {
@@ -450,8 +443,5 @@ body {
     }
     #contact #copy ul li a{
         margin: 32px 20px;
-    }
-    .container {
-        overflow: auto;
     }
 }
