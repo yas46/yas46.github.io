@@ -402,13 +402,7 @@ body {
                         supported by Chrome and Opera */
 }
 
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 420px) {
-    .name h3 {
-        font-size: 30px;
-        letter-spacing: .2em;
-    }
+@media screen and (max-width: 480px) {
     #home #copy {
         font-size: 2em;
         top: 30%;
