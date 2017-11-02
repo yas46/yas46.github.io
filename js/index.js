@@ -70,6 +70,28 @@ $( window ).scroll(function() {
     console.log("currentTop " +  currentTop);
     console.log("docHeight " + docHeight);
 
+    if($(window).width() > 480) {
+        if($(window).scrollTop() > (2*docHeight)) {
+           $('#top-about').removeClass("fixed");
+        }
+
+        if($(window).scrollTop() < (2*docHeight)-70 && $(window).scrollTop() > docHeight) {
+           $('#top-about').addClass("fixed");
+        }
+
+        if($(window).scrollTop() > (2*docHeight)-100 && $(window).scrollTop() > docHeight && $(window).scrollTop() < (3*docHeight)) {
+           $('#top-skills').addClass("fixed");
+        }
+
+        if($(window).scrollTop() > (3*docHeight)-20 || $(window).scrollTop() < (2*docHeight)-30) {
+           $('#top-skills').removeClass("fixed");
+        }
+    } else {
+        if($(window).scrollTop() > docHeight) {
+           $('#top-about').addClass("fixed");
+        }
+    }
+
     //hide name and nav
     if(currentTop >= docHeight && $(window).scrollTop() < docHeight) {
         console.log("past");
@@ -84,22 +106,6 @@ $( window ).scroll(function() {
        $('.name').show( "slide", { direction: "left"  }, 600, "easeOutQuad");
        $('.nav-bar').show( "slide", { direction: "right" }, 600, "easeOutQuad");
     //    $('#top-bar-about').addClass("fixed");
-    }
-
-    if($(window).scrollTop() > (2*docHeight)) {
-       $('#top-about').removeClass("fixed");
-    }
-
-    if($(window).scrollTop() < (2*docHeight)-70 && $(window).scrollTop() > docHeight) {
-       $('#top-about').addClass("fixed");
-    }
-
-    if($(window).scrollTop() > (2*docHeight)-100 && $(window).scrollTop() > docHeight && $(window).scrollTop() < (3*docHeight)) {
-       $('#top-skills').addClass("fixed");
-    }
-
-    if($(window).scrollTop() > (3*docHeight)-20 || $(window).scrollTop() < (2*docHeight)-30) {
-       $('#top-skills').removeClass("fixed");
     }
 
     if($(window).scrollTop() > (2*docHeight)-150) {
