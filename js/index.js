@@ -63,6 +63,9 @@ function moveTo(elem) {
 //scroll conditions
 $( window ).scroll(function() {
     let docHeight = $(window).height();
+    let homeHeight = $('#home').height();
+    let aboutHeight = $('#about').height();
+    console.log("about " + aboutHeight);
     console.log("top " + $(window).scrollTop());
     console.log("currentTop " +  currentTop);
     console.log("docHeight " + docHeight);
@@ -91,11 +94,11 @@ $( window ).scroll(function() {
        $('#top-about').addClass("fixed");
     }
 
-    if($(window).scrollTop() > (2*docHeight)+150 && $(window).scrollTop() > docHeight && $(window).scrollTop() < (3*docHeight)-70) {
+    if($(window).scrollTop() > (2*docHeight)-100 && $(window).scrollTop() > docHeight && $(window).scrollTop() < (3*docHeight)) {
        $('#top-skills').addClass("fixed");
     }
 
-    if($(window).scrollTop() > (3*docHeight)-70 || $(window).scrollTop() < (2*docHeight)-30) {
+    if($(window).scrollTop() > (3*docHeight)-20 || $(window).scrollTop() < (2*docHeight)-30) {
        $('#top-skills').removeClass("fixed");
     }
 
