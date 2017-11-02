@@ -407,6 +407,11 @@ body {
         font-size: 1.3em;
         letter-spacing: .3em;
     }
+    #about #top-bar-about {
+        position:fixed;
+        top:0;
+        left:0;
+    }
     #home #copy {
         font-size: 1.9em;
         top: 20%;
@@ -448,14 +453,8 @@ body {
         top: 30%;
     }
     #contact #copy ul li a{
-        margin: 32px 28px;
+        margin: 32px 20px;
     }
-    .container {
-        overflow: auto;
-    }
-}
-
-@media only screen and (max-width : 770px) {
     .container {
         overflow: auto;
     }
