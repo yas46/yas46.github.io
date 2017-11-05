@@ -339,7 +339,7 @@ body {
             transition: 0.3s ease;
 }
 
-#contact #copy a:hover {
+#contact #copy #email-btn:hover {
     opacity: .5;
 }
 

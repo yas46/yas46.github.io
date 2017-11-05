@@ -47,6 +47,12 @@ $(document).ready(function () {
         $('#arrow-img').animate({ width: "70px"}, 300);
     });
 
+    $('#arrow-img').hover(() => {
+        $('#arrow-img').animate({ width: "100px"}, 300);
+    }, () => {
+        $('#arrow-img').animate({ width: "70px"}, 300);
+    });
+
 });
 
 //top refferance for scroll conditions
