@@ -29,16 +29,22 @@ $(document).ready(function () {
         $(this).animate({ opacity: "1"});
     });
 
+    let moveArrow = ()=> {
+        setInterval( ()=> {
+            $('#arrow').addClass('glow', 600, "linear");
+            setTimeout( ()=> {
+                    $('#arrow').removeClass('glow', 2000, "linear");
+                }, 1000);
+        }, 4000);
+    }
+
+    moveArrow();
+
     //nav bar slide-in hover animation
     $("#x-btn").hover(function() {
         $(this).animate({ opacity: ".5"});
     }, function() {
         $(this).animate({ opacity: "1"});
-    });
-
-    $( "#about-btn" ).click(function() {
-        console.log("click");
-
     });
 
     $('#email-btn').hover(() => {

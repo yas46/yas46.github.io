@@ -158,6 +158,13 @@ body {
     margin-top: 6px;
 }
 
+.glow {
+    text-shadow: 0 0 12px #04c536;
+    color: #04c536;
+    -webkit-transition: 0.3s ease;
+            transition: 0.3s ease;
+}
+
 #about {
     background-color: #fff;
 }
