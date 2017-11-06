@@ -1,10 +1,13 @@
 $(document).ready(function () {
 
     //set container positions
-    $('.nav-bar').hide("slide", {direction: "right"}, 0);
+    $('.nav-bar').hide("slide", {direction: "right"});
     $('.name').hide();
-    $('#nav').hide("slide", { direction: "right" }, 0);
+    $('#nav').hide("slide", { direction: "right" });
     $("#x-btn").css("opacity", 0);
+    $('.nav-bar').css("zIndex", 999);
+    $('.name').css("zIndex", 999);
+
 
     //nav bar slide-out
     $( "#bars-btn" ).click(function() {
