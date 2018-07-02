@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
     //set container positions
@@ -32,10 +33,10 @@ $(document).ready(function () {
         $(this).animate({ opacity: "1"});
     });
 
-    let moveArrow = ()=> {
-        setInterval( ()=> {
+    let moveArrow = function() {
+        setInterval( function() {
             $('#arrow').addClass('glow', 600, "linear");
-            setTimeout( ()=> {
+            setTimeout( function() {
                     $('#arrow').removeClass('glow', 2000, "linear");
                 }, 1000);
         }, 4000);
@@ -50,15 +51,15 @@ $(document).ready(function () {
         $(this).animate({ opacity: "1"});
     });
 
-    $('#email-btn').hover(() => {
+    $('#email-btn').hover(function() {
         $('#arrow-img').animate({ width: "100px"}, 300);
-    }, () => {
+    }, function() {
         $('#arrow-img').animate({ width: "70px"}, 300);
     });
 
-    $('#arrow-img').hover(() => {
+    $('#arrow-img').hover(function() {
         $('#arrow-img').animate({ width: "100px"}, 300);
-    }, () => {
+    }, function() {
         $('#arrow-img').animate({ width: "70px"}, 300);
     });
 
