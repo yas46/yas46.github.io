@@ -12,7 +12,6 @@ $(document).ready(function () {
 
     //nav bar slide-out
     $( "#bars-btn" ).click(function() {
-        console.log("click");
         $('#bars-btn').hide("slide", { direction: "right" }, 400);
         $('#nav').delay(400).show("slide", { direction: "right" }, 600);
         $("#x-btn").delay(800).animate({opacity: 1}, 400);
@@ -20,7 +19,6 @@ $(document).ready(function () {
 
     //nav bar slide-in
     $( "#x-btn" ).click(function() {
-        console.log("click");
         $(this).animate({opacity: 0}, 10);
         $('#nav').hide("slide", { direction: "right" }, 600);
         $('#bars-btn').delay(400).show("slide", { direction: "right" }, 400);
@@ -81,10 +79,6 @@ $( window ).scroll(function() {
     let docHeight = $(window).height();
     let homeHeight = $('#home').height();
     let aboutHeight = $('#about').height();
-    console.log("about " + aboutHeight);
-    console.log("top " + $(window).scrollTop());
-    console.log("currentTop " +  currentTop);
-    console.log("docHeight " + docHeight);
 
     if($(window).width() > 480) {
         if($(window).scrollTop() > (2*docHeight)) {
@@ -110,7 +104,6 @@ $( window ).scroll(function() {
 
     //hide name and nav
     if(currentTop >= docHeight && $(window).scrollTop() < docHeight) {
-        console.log("past");
         $('.top-bar').removeClass("fixed");
         $('.name').hide( "slide", { direction: "left"  }, 600, "easeOutQuad");
         $('.nav-bar').hide( "slide", { direction: "right"  }, 600, "easeOutQuad");
@@ -118,39 +111,32 @@ $( window ).scroll(function() {
 
     //show name and nav
     if(currentTop <= docHeight && $(window).scrollTop() >= docHeight) {
-        console.log("past");
        $('.name').show( "slide", { direction: "left"  }, 600, "easeOutQuad");
        $('.nav-bar').show( "slide", { direction: "right" }, 600, "easeOutQuad");
     //    $('#top-bar-about').addClass("fixed");
     }
 
     if($(window).scrollTop() > (2*docHeight)-150) {
-        console.log("darker");
         $("#x-btn").addClass("darker-color");
     }
 
     if($(window).scrollTop() < (2*docHeight)-150) {
-        console.log("darker");
         $("#x-btn").removeClass("darker-color");
     }
 
     if($(window).scrollTop() > (3*docHeight)-143) {
-        console.log("darker");
         $("#x-btn").removeClass("darker-color");
     }
 
     if($(window).scrollTop() > (2*docHeight)-30) {
-        console.log("darker");
         $("#bars-btn").addClass("darker-color");
     }
 
     if($(window).scrollTop() < (2*docHeight)-30) {
-        console.log("darker");
         $("#bars-btn").removeClass("darker-color");
     }
 
     if($(window).scrollTop() > (3*docHeight)-30) {
-        console.log("darker");
         $("#bars-btn").removeClass("darker-color");
     }
 
